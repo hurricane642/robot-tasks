@@ -10,12 +10,22 @@ def task_4_11():
     m=13
     n=1
     for i in range(m):
-        move_down(1)
         if i%2==0:
+         move_down(1)
          for o in range(n):
             fill_cell()
             move_right(1)
-         
+        else:
+         move_down(1)
+         move_right(1)
+         for o in range(n):
+            move_left(1)
+            fill_cell()
+        n=n+1
+        o=0
+    move_down(1)
+    move_left(13)
+
 
 
 
